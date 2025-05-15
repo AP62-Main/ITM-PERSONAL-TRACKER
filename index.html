@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ITM Personal Development Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-row">
+      <img src="ISU-LOGO.webp" alt="ITM Skills University Logo" class="logo">
+      <div class="header-titles">
+        <span class="site-title">ITM Personal Development Tracker</span>
+        <span class="site-subtitle">Empowering Your Growth Journey</span>
+      </div>
+      <nav class="header-nav">
+        <button id="dark-mode-toggle" type="button">🌙</button>
+        <button id="share-profile-btn" type="button">🔗</button>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h1>ITM Personal Development Tracker</h1>
+    <div id="badges-section"></div>
+    <canvas id="analytics-chart" width="400" height="200"></canvas>
+    <form id="activity-form">
+      <input type="text" id="activity-input" placeholder="Add a new activity..." required>
+      <select id="category-input" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Soft Skills">Soft Skills</option>
+        <option value="Leadership">Leadership</option>
+        <option value="Internship">Internship</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" id="due-date-input">
+      <textarea id="notes-input" placeholder="Notes (optional)"></textarea>
+      <button type="submit">Add Activity</button>
+    </form>
+
+
+    <div class="filter-section">
+      <label for="filter-category">Filter by Category:</label>
+      <select id="filter-category">
+        <option value="All">All</option>
+        <option value="Soft Skills">Soft Skills</option>
+        <option value="Leadership">Leadership</option>
+        <option value="Internship">Internship</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="progress-section" id="overall-progress-section">
+      <h3>Overall Progress</h3>
+      <div class="progress-bar-bg">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <span id="progress-text">0% Completed</span>
+    </div>
+    <div id="category-progress-bars"></div>
+    <ul id="activity-list"></ul>
+  </div>
+
+
+  <footer class="main-footer">
+    <div>
+      <span>© 2024 ITM Skills University</span>
+      <span class="footer-links">
+        <a href="https://itmbtech.com/?utm_source=google&utm_medium=search&utm_campaign=Btech-Branded-2025&utm_adgroupid=&utm_keyword=itm%20btech&utm_term=itm%20btech&utm_campaignid=22335811153&utm_network=g&utm_device=c&utm_matchtype=p&utm_placement=&utm_creativeid=738450978872&gad_source=1&gad_campaignid=22335811153&gbraid=0AAAAApoTW9dnmWD_n6UrSBY7WwPfRe7S9&gclid=CjwKCAjw_pDBBhBMEiwAmY02NiPxEX5UAQcDm9rZR77zU52do7b-Qb5hiiYbWhCowT0X0kwqKrGC1BoCFc8QAvD_BwE" target="_blank">Official Website</a>
+        |
+        <a href="mailto:info@itmuniversity.org">Contact</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> d
